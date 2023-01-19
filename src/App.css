@@ -177,19 +177,19 @@ img {
     margin-right: var(--mb-1-5);
   }
 
-  .button {
+  /* .button {
     padding: 1rem 1.75rem;
   }
 
   .button__icon {
     width: 22px;
     height: 22px;
-  }
+  } */
 }
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-  body {
+  /* body {
     margin: 0 0 var(--header-height) 0;
   }
 
@@ -199,7 +199,7 @@ img {
 
   .section__subtitle {
     margin-bottom: var(--mb-3);
-  }
+  } */
 }
 
 @media screen and (max-width: 576px) {
@@ -207,12 +207,12 @@ img {
 
 /* For small devices */
 @media screen and (max-width: 350px) {
-  :root {
+  /* :root {
     --big-font-size: 2.25rem;
-  }
+  }*/
 
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
-  }
+  } 
 }
