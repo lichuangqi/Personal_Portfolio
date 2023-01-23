@@ -1,6 +1,6 @@
 import './about.css';
-import AboutImg from "../../assets/about.jpg";
-import CV from "../../assets/John-Cv.pdf";
+import AboutImg from "../../assets/lcq.jpg";
+import CV from "../../assets/Chuangqi_Li_Frontend.pdf";
 import Info from './Info';
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
         <img src={AboutImg} alt="" className='about__img' />
         <div className='about__data'>
           <Info />
-          <p className='about__description'>Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
+          <p className='about__description'>Full-stack Developer, I create web pages and web server with UI / UX user interface, I have 3 years experience and keep learning the latest front-end and back-end technologies. The leaders and colleagues who have worked with me before are very satisfied with the projects I have executed.</p>
           <a download="" href={CV} className="button button--flex">Download CV<svg
             class="button__icon"
             xmlns="http://www.w3.org/2000/svg"
