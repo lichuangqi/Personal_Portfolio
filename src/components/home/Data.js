@@ -1,5 +1,4 @@
-import React from 'react'
-
+import TypingTitle from "./TypingTitle";
 const Data = () => {
   return (
     <div className='home__data'>
@@ -53,7 +52,9 @@ const Data = () => {
         ></path>
       </svg>
       </h1>
-      <h3 className='home__subtitle'>Web Developer</h3>
+      <h3 className='home__subtitle'>
+        <TypingTitle/>
+      </h3>
       <p className='home__description'>I'm creative developer based in Brisbane, and I'm very passionate and dedicated to my work.</p>
       <a href='#contact' className='button button--flex'>Say Hello<svg
         class="button__icon"
