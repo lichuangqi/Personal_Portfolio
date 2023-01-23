@@ -1,12 +1,13 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css';
 const Contact = () => {
     const form = useRef();
-
+    const [buttonText, setButtonText] = useState('Send Message');
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_7azcazl', 'template_xn6ptw4', form.current, 'nrqRct-xSnOcXMENK')
+        setButtonText('Send Successfully')
         e.target.reset()
     };
 
@@ -21,20 +22,20 @@ const Contact = () => {
                         <div className="contact__card">
                             <i className="bx bx-mail-send contact__card-icon"></i>
                             <h3 className="contact__card-title">Email</h3>
-                            <span className="contact__card-data">user@gmail.com</span>
-                            <a href="mailto:exampleemail@gmail.com" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <span className="contact__card-data">Charlie's Email</span>
+                            <a href="mailto:charlie.chuangqi.li@gmail.com" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                         <div className="contact__card">
                             <i className="bx bxl-whatsapp contact__card-icon"></i>
                             <h3 className="contact__card-title">Whatsapp</h3>
-                            <span className="contact__card-data">999-888-777</span>
-                            <a href="https://api.whatsapp.com/send?phone=62214408789&text=Hello, more information!" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <span className="contact__card-data">Charlie's phone number</span>
+                            <a href="https://api.whatsapp.com/send?phone=+610405155518&text=Hello, Charlie!" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                         <div className="contact__card">
                             <i className="bx bxl-messenger contact__card-icon"></i>
                             <h3 className="contact__card-title">Messenger</h3>
-                            <span className="contact__card-data">user.fb123</span>
-                            <a href="https://m.me/crypticalcoder" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <span className="contact__card-data">Charlie's account number</span>
+                            <a href="https://www.messenger.com/" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +54,7 @@ const Contact = () => {
                             <label className="contact__form-tag">Project</label>
                             <textarea name='project' className="contact__form-input" cols="30" rows="10" placeholder="Write your project"></textarea>
                         </div>
-                        <button className='button button--flex'>Send Message<svg
+                        <button className='button button--flex'>{buttonText}<svg
                             class="button__icon"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
