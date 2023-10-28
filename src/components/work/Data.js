@@ -2,6 +2,7 @@ import Cover_1 from '../../assets/land monitor.png';
 import Cover_2 from '../../assets/smartcity.png';
 import Cover_3 from '../../assets/medical.png';
 import Cover_4 from '../../assets/jr_academy.png';
+import Cover_5 from '../../assets/property_credit.png';
 export const projectsData = [
   {
     id: 1,
@@ -29,6 +30,13 @@ export const projectsData = [
     image: Cover_4,
     title: "JR Academy website",
     url:"https://jracademy.com.au/",
+    category: "web",
+  },
+  {
+    id: 5,
+    image: Cover_5,
+    title: "Property Credit website",
+    url:"https://property.credit/",
     category: "web",
   }
 ];

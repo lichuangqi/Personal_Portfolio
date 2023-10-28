@@ -6,7 +6,7 @@ const TypingTitle = () => {
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
     const period = 2000;
-    const toRotate = ["Web Developer", "React Developer", "Vue Developer"]
+    const toRotate = ["Full Stack Developer", "React Developer", "Vue Developer"]
     useEffect(()=> {
         let ticker = setInterval(()=>{
             tick();
